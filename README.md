@@ -1,6 +1,6 @@
 # Deep Neural Networks from Scratch using NumPy
 This project implements a Python Class to define, train and evaluate Deep Neural Network models for classification and regression tasks.
-It uses Backpropagation algorithm with various Activation functions, Optimizers and Regularizers for training the model objects.
+It uses the Backpropagation algorithm with various Activation functions, Optimizers and Regularizers for training the model objects.
 This project is completely built from scratch using the **NumPy** library. No Deep Learning framework is utilized.</br>
 </br>Detailed description of this project along with results can be found [here](#project-description-and-results).
 
@@ -20,12 +20,12 @@ Running this project on your local system requires the following packages to be 
  You can also use [Google Colab](https://colab.research.google.com/) in a Web Browser without needing to install the mentioned packages.
  
 ### Usage
-This project is implemented as an interactive Jupyter Notebook. You just need to open the notebook on your local system or on [Google Colab](https://colab.research.google.com/) and execute the code cells in sequencial order. The function of each code cell is properly explained with the help of comments. 
+This project is implemented as an interactive Jupyter Notebook. You just need to open the notebook on your local system or on [Google Colab](https://colab.research.google.com/) and execute the code cells in sequential order. The function of each code cell is properly explained with the help of comments. 
 
 ## Tools Used
-* [NumPy](https://numpy.org/) : Used for storing and manipulating high dimentional arrays, and performing large scale mathematical computations on them.
+* [NumPy](https://numpy.org/) : Used for storing and manipulating high dimensional arrays, and performing large scale mathematical computations on them.
 * [Matplotlib](https://matplotlib.org/) : Used for plotting the Learning Curves.
-* [Google Colab](https://colab.research.google.com/) : Used as the developement environment for executing high end computations on it's backend GPUs/TPUs and for editing the Jupyter Notebook. 
+* [Google Colab](https://colab.research.google.com/) : Used as the development environment for executing high-end computations on its backend GPUs/TPUs and for editing the Jupyter Notebook. 
 
 ## Contributing
 You are welcome to contribute :
@@ -72,11 +72,11 @@ A Python class named **Deep_Neural_Network** is defined with the following major
       activation(string)    :   Activation function for hidden layers. One of the following :
                                 'linear'  : Linear activation.
                                 'sigmoid' : Sigmoid activation.
-                                'tanh'    : Hyberbolic tangent activation.
+                                'tanh'    : Hyperbolic tangent activation.
                                 'relu'    : Rectified Linear Unit activation.
                                 'lrelu'   : Leaky Rectified Linear Unit activation.
 
-                                Activation function at output layer would be SoftMax for classification
+                                Activation function at the output layer would be SoftMax for classification
                                 and Linear for regression.
 
       leaky_relu_slope(int) :   Slope for Leaky ReLU activation.
@@ -115,7 +115,7 @@ A Python class named **Deep_Neural_Network** is defined with the following major
 
       mini_batch_size(int)          :   Mini Batch size (1 for Stochastic gradient descent).
 
-      epochs(int)                   :   No. of iterations over training set.
+      epochs(int)                   :   No. of iterations over the training set.
 
       learning_rate(float)          :   Learning rate aplha.
 
@@ -148,9 +148,9 @@ A Python class named **Deep_Neural_Network** is defined with the following major
 Other methods implemented for back-end computations are : 
 
 * Methods computing various Activations functions and their gradients.
-* forward_propagation() : The method to forward propagate input data through the network, and calculate activations of each layer.
-* backward_propagation() : The method to compute gradient of cost with respect to weights and biases of each layer.
-* compute_cost() : The method to compute cost for the current forward propagated batch.
+* forward_propagation() : The method to forward propagate input data through the network, and calculate activations of each layer in the network.
+* backward_propagation() : The method to compute the gradient of cost with respect to weights and biases of each layer in the network.
+* compute_cost() : The method to compute the cost for the current forward propagated batch.
 * accuracy() : The method to calculate classification accuracy.
 * to_one_hot() : The method to convert SoftMax probabilities to labels in one hot form.
 * save_weights() : The method to save model weights.
@@ -159,7 +159,7 @@ Other methods implemented for back-end computations are :
 Their detailed description can be found [here](Deep_Neural_Networks_from_Scratch_using_NumPy.ipynb).
 
 ### MNIST Handwritten Digits Classification
-A Deep_Neural_Network object was created and trained with following configuration :
+A Deep_Neural_Network object was created and trained with the following configuration :
 
     model = Deep_Neural_Network()
     
@@ -176,7 +176,7 @@ Following results were obtained :
 Test accuracy of **98.4 %** was achieved using the same model.
 
 ### Boston Housing Prices Prediction
-A Deep_Neural_Network object was created and trained with following configuration :
+A Deep_Neural_Network object was created and trained with the following configuration :
 
     model = Deep_Neural_Network()
 
